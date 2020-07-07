@@ -8,11 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>@yield['title']</title>
+    <title>@yield('title')</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
+    <div class="container boxatas">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,12 +27,9 @@
         </div>
         </div>
     </nav>
-    <div class="container">
-    <h1>Selamat Datang Diseleksi</h1>
-    <h1>Unit Kegiatan Mahasiswa</h1>
-    <h1>Informatika & Komputer</h1>
-  
+    @yield('container')
 
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
