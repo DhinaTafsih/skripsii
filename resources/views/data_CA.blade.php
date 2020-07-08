@@ -1,1 +1,3 @@
-@extends('layout.footer')  
+
+@extends('layout.dataca')  
+@extends('layout.main')  
